@@ -27,7 +27,6 @@ const StairEffect = () => {
 					></motion.div>
 				</div>
 			</AnimatePresence>
-			;
 		</>
 	);
 };
