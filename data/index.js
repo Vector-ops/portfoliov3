@@ -32,8 +32,8 @@ export const links = [
 		path: "/resume",
 	},
 	{
-		name: "work",
-		path: "/work",
+		name: "projects",
+		path: "/projects",
 	},
 	{
 		name: "contact",
@@ -248,3 +248,69 @@ export const skills = {
 		},
 	],
 };
+
+export const projects = [
+	{
+		num: "01",
+		category: "fullstack",
+		title: "GDSC MVJCE Website",
+		description: "The official website of GDSC MVJCE.",
+		stack: [
+			{
+				name: "Next.js",
+			},
+			{
+				name: "Tailwind CSS",
+			},
+		],
+		image: "/assets/projects/thumb1.png",
+		live: "https://gdscmvjce.tech",
+		github: "https://github.com/Vector-ops/gdsc-mvjce-website",
+	},
+	{
+		num: "02",
+		category: "fullstack",
+		title: "Quail - Bookstore",
+		description: "An online bookstore built with React and Node.js.",
+		stack: [
+			{
+				name: "React",
+			},
+			{
+				name: "Node.js",
+			},
+			{
+				name: "PostgreSQL",
+			},
+			{
+				name: "Prisma",
+			},
+			{
+				name: "Express",
+			},
+		],
+		image: "/assets/projects/thumb2.png",
+		live: "",
+		github: "https://github.com/Vector-ops/quail",
+	},
+	{
+		num: "03",
+		category: "frontend",
+		title: "Portfolio",
+		description: "My personal portfolio website.",
+		stack: [
+			{
+				name: "Next.js",
+			},
+			{
+				name: "Tailwind CSS",
+			},
+			{
+				name: "Framer Motion",
+			},
+		],
+		image: "/assets/projects/thumb3.png",
+		live: "",
+		github: "https://github.com/Vector-ops/portfoliov3",
+	},
+];
