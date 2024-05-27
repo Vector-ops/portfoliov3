@@ -8,12 +8,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import {
+	default as ProjectSliderBtns,
+	default as WorkSliderBtns,
+} from "@/components/ProjectSliderBtns";
+import {
 	Tooltip,
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
-import WorkSliderBtns from "@/components/WorkSliderBtns";
 import { projects } from "@/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -114,7 +117,7 @@ const Projects = () => {
 									</div>
 								</SwiperSlide>
 							))}
-							<WorkSliderBtns
+							<ProjectSliderBtns
 								containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
 								btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition all "
 							/>
