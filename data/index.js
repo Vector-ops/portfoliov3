@@ -54,3 +54,34 @@ export const stats = [
 		text: "Code commits",
 	},
 ];
+
+export const services = [
+	{
+		num: "01",
+		title: "Web Development",
+		description:
+			"I can help you build a website from scratch or improve an existing one.",
+		href: "/services/web-development",
+	},
+	{
+		num: "02",
+		title: "UI/UX Design",
+		description:
+			"I can help you design a beautiful and user-friendly interface for your website.",
+		href: "/services/web-development",
+	},
+	{
+		num: "03",
+		title: "Animation",
+		description:
+			"I can help you create a beautiful and engaging animation for your website.",
+		href: "/services/web-development",
+	},
+	{
+		num: "04",
+		title: "SEO",
+		description:
+			"I can help you optimize your website for search engines and improve your ranking.",
+		href: "/services/web-development",
+	},
+];
