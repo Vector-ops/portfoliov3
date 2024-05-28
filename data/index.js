@@ -1,11 +1,14 @@
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
 	FaCss3,
+	FaEnvelope,
 	FaGithub,
 	FaHtml5,
 	FaJs,
 	FaLinkedin,
+	FaMapMarkerAlt,
 	FaNodeJs,
+	FaPhoneAlt,
 	FaReact,
 } from "react-icons/fa";
 import { FaDocker, FaGolang, FaJava, FaSass } from "react-icons/fa6";
@@ -23,10 +26,10 @@ export const links = [
 		name: "home",
 		path: "/",
 	},
-	{
-		name: "services",
-		path: "/services",
-	},
+	// {
+	// 	name: "services",
+	// 	path: "/services",
+	// },
 	{
 		name: "resume",
 		path: "/resume",
@@ -54,16 +57,16 @@ export const socials = [
 
 export const stats = [
 	{
-		num: 12,
-		text: "Years of Experience",
+		num: 1,
+		text: "Year of Experience",
 	},
 	{
-		num: 100,
+		num: 10,
 		text: "Projects Completed",
 	},
 
 	{
-		num: 8,
+		num: 3,
 		text: "Technologies mastered",
 	},
 
@@ -107,7 +110,7 @@ export const services = [
 export const about = {
 	title: "About me",
 	description:
-		"I am a backend developer. I have worked with a variety of technologies and languages, including JavaScript, Node.js, React, and Golang. I am passionate about coding and love to learn new things. I am always looking for new challenges and opportunities to grow as a developer.",
+		"I've developed and optimized various backend solutions, designed RESTful APIs, and worked with databases like MySQL and MongoDB. I'm a problem solver with a keen analytical mindset, always eager to learn new technologies and improve my skills. My goal is to apply my knowledge to real-world applications, contributing to innovative projects and growing as a backend developer.",
 	info: [
 		{
 			fieldName: "Name",
@@ -151,8 +154,13 @@ export const experience = {
 		"I have worked with a variety of technologies and languages, including JavaScript, Node.js, React, and Golang. I have experience working on both frontend and backend development.",
 	items: [
 		{
+			company: "GDSC MVJCE",
+			position: "Backend Developer",
+			duration: "July 2023 - Present",
+		},
+		{
 			company: "DRDO CABS",
-			position: "SDE Intern",
+			position: "Backend Developer Intern",
 			duration: "October 2023 - December 2023",
 		},
 	],
@@ -211,10 +219,6 @@ export const skills = {
 			name: "Java",
 		},
 		{
-			icon: <FaSass />,
-			name: "Sass",
-		},
-		{
 			icon: <SiCplusplus />,
 			name: "C++",
 		},
@@ -260,7 +264,13 @@ export const projects = [
 				name: "Next.js",
 			},
 			{
-				name: "Tailwind CSS",
+				name: "Framer Motion",
+			},
+			{
+				name: "Postgres",
+			},
+			{
+				name: "Prisma",
 			},
 		],
 		image: "/assets/projects/thumb1.png",
@@ -312,5 +322,18 @@ export const projects = [
 		image: "/assets/projects/thumb3.png",
 		live: "",
 		github: "https://github.com/Vector-ops/portfoliov3",
+	},
+];
+
+export const info = [
+	{
+		icon: <FaEnvelope />,
+		title: "Email",
+		description: "sumith2827@gmail.com",
+	},
+	{
+		icon: <FaMapMarkerAlt />,
+		title: "Address",
+		description: "Bangalore, India",
 	},
 ];
