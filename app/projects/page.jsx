@@ -7,10 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
-import {
-	default as ProjectSliderBtns,
-	default as WorkSliderBtns,
-} from "@/components/ProjectSliderBtns";
+import ProjectSliderBtns from "@/components/ProjectSliderBtns";
 import {
 	Tooltip,
 	TooltipContent,
@@ -34,7 +31,7 @@ const Projects = () => {
 			initial={{ opacity: 0 }}
 			animate={{
 				opacity: 1,
-				transition: { delay: 1, duration: 0.5, ease: "easeIn" },
+				transition: { delay: 1.8, duration: 0.5, ease: "easeIn" },
 			}}
 			className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
 		>
@@ -46,7 +43,7 @@ const Projects = () => {
 								{project.num}
 							</div>
 							<h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-								{project.category} project
+								{project.title}
 							</h2>
 							<p className="text-white/60">
 								{project.description}

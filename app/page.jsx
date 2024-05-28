@@ -2,6 +2,7 @@ import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
@@ -10,25 +11,33 @@ const Home = () => {
 			<div className="container mx-auto h-full">
 				<div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
 					<div className="text-center xl:text-left order-2 xl:order-none">
-						<span className="text-xl">Software Developer</span>
+						<span className="text-xl">Backend Developer</span>
 						<h1 className="h1 mb-6">
 							Hello I&apos;m <br />{" "}
 							<span className="text-accent">Sumith BH</span>
 						</h1>
 						<p className="max-w-[500px] mb-9 text-white/80">
-							I excel at crafting elegant digital experiencce and
-							I am profecient in various programming languages and
-							technologies.
+							I&apos;m a university student with a passion for
+							backend development using Node.js and Go. I have a
+							strong interest in system design and enjoy tackling
+							complex technical challenges to create efficient and
+							scalable backend solutions.
 						</p>
 						<div className="flex flex-col xl:flex-row items-center gap-8">
-							<Button
-								variant="outline"
-								size="lg"
-								className="uppercase flex items-center gap-2"
+							<Link
+								href="/assets/documents/Sumith_BH_Resume.pdf"
+								target="_blank"
+								rel="noreferrer"
 							>
-								<span>Download CV</span>
-								<FiDownload className="text-xl" />
-							</Button>
+								<Button
+									variant="outline"
+									size="lg"
+									className="uppercase flex items-center gap-2"
+								>
+									<span>Download CV</span>
+									<FiDownload className="text-xl" />
+								</Button>
+							</Link>
 							<div className="mb-8 xl:mb-0">
 								<Social
 									containerStyles="flex gap-6"

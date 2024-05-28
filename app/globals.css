@@ -24,3 +24,17 @@
 		-webkit-text-stroke: 1px #00ff99;
 	}
 }
+
+*::-webkit-scrollbar {
+	width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+	width: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #4f4f4f;
+	border-radius: 14px;
+}

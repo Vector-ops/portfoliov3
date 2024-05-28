@@ -20,7 +20,7 @@ const StairEffect = () => {
 							opacity: 0,
 							transition: {
 								delay: 0.3,
-								duration: 0.4,
+								duration: 0.2,
 								ease: "easeInOut",
 							},
 						}}
