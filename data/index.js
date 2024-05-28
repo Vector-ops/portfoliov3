@@ -71,7 +71,7 @@ export const stats = [
 	},
 
 	{
-		num: 254,
+		num: 806,
 		text: "Code commits",
 	},
 ];
@@ -258,7 +258,8 @@ export const projects = [
 		num: "01",
 		category: "fullstack",
 		title: "GDSC MVJCE Website",
-		description: "The official website of GDSC MVJCE.",
+		description:
+			"The GDSC MVJCE Website is a dynamic platform developed using Next.js 13, styled-components, react-three-fiber, prisma and various other packages. It serves as the central hub for the Google Developer Student Club community at MVJ College of Engineering, providing interactive sections, event registration, blog showcases, team information, and FAQs.",
 		stack: [
 			{
 				name: "Next.js",
@@ -273,7 +274,7 @@ export const projects = [
 				name: "Prisma",
 			},
 		],
-		image: "/assets/projects/thumb1.png",
+		image: "/assets/projects/gdscmvjce.png",
 		live: "https://gdscmvjce.tech",
 		github: "https://github.com/Vector-ops/gdsc-mvjce-website",
 	},
@@ -281,7 +282,8 @@ export const projects = [
 		num: "02",
 		category: "fullstack",
 		title: "Quail - Bookstore",
-		description: "An online bookstore built with React and Node.js.",
+		description:
+			"Quail is an online bookstore that offers a wide range of books, from fiction to non-fiction, and from bestsellers to classics. The website is built using React, TypeScript, Expressjs and Postgres. It features a responsive design, user authentication, and a shopping cart system.",
 		stack: [
 			{
 				name: "React",
@@ -299,15 +301,33 @@ export const projects = [
 				name: "Express",
 			},
 		],
-		image: "/assets/projects/thumb2.png",
-		live: "",
+		image: "/assets/projects/quail.png",
+		live: "https://quail.vercel.app/",
 		github: "https://github.com/Vector-ops/quail",
 	},
+
 	{
 		num: "03",
+		category: "Interpreter",
+		title: "Reboot - Interpreted Language",
+		description:
+			"Reboot is an interpreted programming language developed using Golang. The language is designed to be simple and easy to use. The language features a simple syntax, with support for variables, functions, loops, and conditionals.",
+		stack: [
+			{
+				name: "Golang",
+			},
+		],
+		image: "/assets/projects/reboot.png",
+		live: "",
+		github: "https://github.com/Vector-ops/reboot",
+	},
+
+	{
+		num: "04",
 		category: "frontend",
 		title: "Portfolio",
-		description: "My personal portfolio website.",
+		description:
+			"My personal portfolio website. The website is developed using Next.js 14, framer motion and tailwindcss",
 		stack: [
 			{
 				name: "Next.js",
@@ -319,9 +339,25 @@ export const projects = [
 				name: "Framer Motion",
 			},
 		],
-		image: "/assets/projects/thumb3.png",
+		image: "/assets/projects/portfolio.png",
 		live: "",
 		github: "https://github.com/Vector-ops/portfoliov3",
+	},
+
+	{
+		num: "05",
+		category: "Command Line",
+		title: "Battleships Game",
+		description:
+			"BattleShips is a CLI-based game developed using Golang. The game is a recreation of the classic Battleships game, where players place their ships on a grid and take turns to guess the location of their opponent's ships. The game features a simple and intuitive interface, with clear instructions and feedback for the players.",
+		stack: [
+			{
+				name: "Golang",
+			},
+		],
+		image: "/assets/projects/portfolio.png",
+		live: "",
+		github: "https://github.com/Vector-ops/battleships",
 	},
 ];
 
