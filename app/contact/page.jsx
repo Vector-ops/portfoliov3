@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from "@emailjs/browser";
 
 import {
 	Select,
@@ -15,7 +16,61 @@ import {
 } from "@/components/ui/select";
 import { info } from "@/data";
 import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 const Contact = () => {
+	const formRef = useRef();
+
+	const [form, setForm] = useState({
+		firstname: "",
+		lastname: "",
+		email: "",
+		message: "",
+	});
+	const [loading, setLoading] = useState(false);
+
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setForm({ ...form, [name]: value });
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setLoading(true);
+
+		emailjs
+			.send(
+				process.env.NEXT_PUBLIC_SERVICE_ID,
+				process.env.NEXT_PUBLIC_TEMPLATE_ID,
+				{
+					from_name: form.firstname + " " + form.lastname,
+					to_name: "Sumith B H",
+					from_email: form.email,
+					to_email: "sumith2827@gmail.com",
+					message: form.message,
+				},
+				process.env.NEXT_PUBLIC_EMAILJS_KEY
+			)
+			.then(
+				() => {
+					setLoading(false);
+					alert(
+						"Thank you for your message. I will get back to you soon."
+					);
+
+					setForm({
+						firstname: "",
+						lastname: "",
+						email: "",
+						message: "",
+					});
+				},
+				(error) => {
+					setLoading(false);
+					console.log(error);
+					alert("Something went wrong. Please try again later.");
+				}
+			);
+	};
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -28,7 +83,11 @@ const Contact = () => {
 			<div className="container mx-auto">
 				<div className="flex flex-col xl:flex-row gap-[30px] ">
 					<div className="xl:w-[54%] order-2 xl:order-none">
-						<form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+						<form
+							ref={formRef}
+							onSubmit={handleSubmit}
+							className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+						>
 							<h3 className="text-4xl text-accent">
 								Let&apos;s work together
 							</h3>
@@ -38,11 +97,29 @@ const Contact = () => {
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 								<Input
 									type="firstname"
+									name="firstname"
+									value={form.firstname}
 									placeholder="Firstname"
+									required
+									onChange={handleChange}
 								/>
-								<Input type="lastname" placeholder="Lastname" />
+								<Input
+									type="lastname"
+									name="lastname"
+									placeholder="Lastname"
+									value={form.lastname}
+									required
+									onChange={handleChange}
+								/>
 							</div>
-							<Input type="email" placeholder="Email" />
+							<Input
+								type="email"
+								name="email"
+								placeholder="Email"
+								value={form.email}
+								onChange={handleChange}
+								required
+							/>
 							{/* <Select>
 								<SelectTrigger>
 									<SelectValue placeholder="Select a service" />
@@ -66,10 +143,14 @@ const Contact = () => {
 
 							<Textarea
 								className="h-[200px]"
+								name="message"
+								value={form.message}
+								onChange={handleChange}
+								required
 								placeholder="Type your message here."
 							/>
 							<Button size="sm" className="max-w-40">
-								Send Message
+								{loading ? "Sending..." : "Send"}
 							</Button>
 						</form>
 					</div>
