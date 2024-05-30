@@ -13,6 +13,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
 	title: "Portfolio | Sumith",
 	description: "Portfolio",
+	icons: {
+		icon: "/assets/sumith.png",
+	},
 };
 
 export default function RootLayout({ children }) {

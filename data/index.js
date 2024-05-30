@@ -47,11 +47,11 @@ export const links = [
 export const socials = [
 	{
 		icon: <FaGithub />,
-		path: "",
+		path: "https://github.com/Vector-ops",
 	},
 	{
 		icon: <FaLinkedin />,
-		path: "",
+		path: "https://www.linkedin.com/in/sumith-b-h-276b53239/",
 	},
 ];
 
@@ -355,7 +355,7 @@ export const projects = [
 				name: "Golang",
 			},
 		],
-		image: "/assets/projects/portfolio.png",
+		image: "/assets/projects/battleships.png",
 		live: "",
 		github: "https://github.com/Vector-ops/battleships",
 	},
