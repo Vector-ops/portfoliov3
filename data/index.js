@@ -340,7 +340,7 @@ export const projects = [
 			},
 		],
 		image: "/assets/projects/portfolio.png",
-		live: "",
+		live: "https://portfolio-vectorops-projects.vercel.app/",
 		github: "https://github.com/Vector-ops/portfoliov3",
 	},
 
