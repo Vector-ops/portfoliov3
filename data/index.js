@@ -191,28 +191,28 @@ export const skills = {
 		"I have experience working with a variety of technologies and languages. Here are some of the skills:",
 	skillList: [
 		{
-			icon: <FaHtml5 />,
-			name: "HTML",
-		},
-		{
-			icon: <FaCss3 />,
-			name: "CSS",
-		},
-		{
-			icon: <FaJs />,
-			name: "JavaScript",
-		},
-		{
-			icon: <FaReact />,
-			name: "React",
+			icon: <FaGolang />,
+			name: "Golang",
 		},
 		{
 			icon: <FaNodeJs />,
 			name: "Node.js",
 		},
 		{
-			icon: <FaGolang />,
-			name: "Golang",
+			icon: <SiExpress />,
+			name: "Express",
+		},
+		{
+			icon: <FaDocker />,
+			name: "Docker",
+		},
+		{
+			icon: <BiLogoPostgresql />,
+			name: "PostgreSQL",
+		},
+		{
+			icon: <FaReact />,
+			name: "React",
 		},
 		{
 			icon: <FaJava />,
@@ -221,10 +221,6 @@ export const skills = {
 		{
 			icon: <SiCplusplus />,
 			name: "C++",
-		},
-		{
-			icon: <SiExpress />,
-			name: "Express",
 		},
 		{
 			icon: <SiGnubash />,
@@ -243,12 +239,16 @@ export const skills = {
 			name: "Prisma",
 		},
 		{
-			icon: <BiLogoPostgresql />,
-			name: "PostgreSQL",
+			icon: <FaHtml5 />,
+			name: "HTML",
 		},
 		{
-			icon: <FaDocker />,
-			name: "Docker",
+			icon: <FaCss3 />,
+			name: "CSS",
+		},
+		{
+			icon: <FaJs />,
+			name: "JavaScript",
 		},
 	],
 };
@@ -324,24 +324,21 @@ export const projects = [
 
 	{
 		num: "04",
-		category: "frontend",
-		title: "Portfolio",
+		category: "Command Line",
+		title: "Mapil",
 		description:
-			"My personal portfolio website. The website is developed using Next.js 14, framer motion and tailwindcss",
+			"Mapil is a simple command line utility to store your passwords, API keys, bookmarks, TODO lists etc with a whole set of features making it easier to acces and manage the data. It provides quick access to your data and stores data locally on your PC which you can access anytime directly from the terminal. Mapil is continously getting new features and updates.",
 		stack: [
 			{
-				name: "Next.js",
+				name: "Golang",
 			},
 			{
-				name: "Tailwind CSS",
-			},
-			{
-				name: "Framer Motion",
+				name: "Terminal UI",
 			},
 		],
-		image: "/assets/projects/portfolio.png",
-		live: "https://portfolio-vectorops-projects.vercel.app/",
-		github: "https://github.com/Vector-ops/portfoliov3",
+		image: "/assets/projects/mapil.png",
+		live: "",
+		github: "https://github.com/Vector-ops/mapil",
 	},
 
 	{
