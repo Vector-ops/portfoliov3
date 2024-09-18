@@ -31,7 +31,7 @@ const Projects = () => {
 			initial={{ opacity: 0 }}
 			animate={{
 				opacity: 1,
-				transition: { delay: 1.8, duration: 0.5, ease: "easeIn" },
+				transition: { delay: 1, duration: 0.5, ease: "easeIn" },
 			}}
 			className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
 		>

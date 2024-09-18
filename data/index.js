@@ -110,7 +110,7 @@ export const services = [
 export const about = {
 	title: "About me",
 	description:
-		"I've developed and optimized various backend solutions, designed RESTful APIs, and worked with databases like MySQL and MongoDB. I'm a problem solver with a keen analytical mindset, always eager to learn new technologies and improve my skills. My goal is to apply my knowledge to real-world applications, contributing to innovative projects and growing as a backend developer.",
+		"Hi I am Sumith, CS undergrad with a passion for coding and technology. I have experience working with a variety of technologies and languages, including JavaScript, Node.js, React, and Golang. I have experience working on both frontend and backend development. I like to build developer tools, web applications, and CLI utilities. I am always looking for new challenges and opportunities to learn and grow.",
 	info: [
 		{
 			fieldName: "Name",

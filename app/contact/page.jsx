@@ -5,15 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
 
-import {
-	Select,
-	SelectContent,
-	SelectGroup,
-	SelectItem,
-	SelectLabel,
-	SelectTrigger,
-	SelectValue,
-} from "@/components/ui/select";
 import { info } from "@/data";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
@@ -76,7 +67,7 @@ const Contact = () => {
 			initial={{ opacity: 0 }}
 			animate={{
 				opacity: 1,
-				transition: { delay: 1.8, duration: 0.5, ease: "easeIn" },
+				transition: { delay: 1, duration: 0.5, ease: "easeIn" },
 			}}
 			className="py-6"
 		>
