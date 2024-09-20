@@ -25,7 +25,7 @@ const Home = () => {
 						</p>
 						<div className="flex flex-col xl:flex-row items-center gap-8">
 							<Link
-								href="/assets/documents/Sumith_BH_Resume.pdf"
+								href="/assets/documents/SUMITH_B_H_Resume.pdf"
 								target="_blank"
 								rel="noreferrer"
 							>

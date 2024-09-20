@@ -1,5 +1,6 @@
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
+	FaAws,
 	FaCss3,
 	FaEnvelope,
 	FaGithub,
@@ -51,7 +52,7 @@ export const socials = [
 	},
 	{
 		icon: <FaLinkedin />,
-		path: "https://www.linkedin.com/in/sumith-b-h-276b53239/",
+		path: "https://www.linkedin.com/in/sumithbh/",
 	},
 ];
 
@@ -61,17 +62,17 @@ export const stats = [
 		text: "Year of Experience",
 	},
 	{
-		num: 10,
+		num: 15,
 		text: "Projects Completed",
 	},
 
 	{
-		num: 3,
+		num: 6,
 		text: "Technologies mastered",
 	},
 
 	{
-		num: 806,
+		num: 1245,
 		text: "Code commits",
 	},
 ];
@@ -205,6 +206,10 @@ export const skills = {
 		{
 			icon: <FaDocker />,
 			name: "Docker",
+		},
+		{
+			icon: <FaAws />,
+			name: "AWS",
 		},
 		{
 			icon: <BiLogoPostgresql />,
