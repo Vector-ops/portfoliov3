@@ -280,7 +280,7 @@ export const projects = [
 			},
 		],
 		image: "/assets/projects/gdscmvjce.png",
-		live: "https://gdscmvjce.tech",
+		live: "https://gdscmvjce.vercel.app",
 		github: "https://github.com/Vector-ops/gdsc-mvjce-website",
 	},
 	{
