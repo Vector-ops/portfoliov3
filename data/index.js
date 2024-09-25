@@ -131,7 +131,7 @@ export const about = {
 		},
 		{
 			fieldName: "Languages",
-			fieldValue: "English, Kannada, Hindi",
+			fieldValue: "English, Kannada",
 		},
 		{
 			fieldName: "Hobbies",
